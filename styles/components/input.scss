@@ -1,0 +1,26 @@
+.bonjol-input {
+	@apply flex flex-nowrap items-center;
+
+	background-color: #fff;
+	border: var(--bonjol-root-border) solid var(--bonjol-color-border);
+	border-radius: 16px;
+	padding: 0 4px;
+
+	.bonjol-input-prefix {
+		height: 42px;
+		border-right: var(--bonjol-root-border) solid var(--bonjol-color-border);
+	}
+
+	select {
+		background-color: transparent;
+		outline: none;
+	}
+
+	input {
+		outline: none;
+		background-color: transparent;
+		height: 42px;
+		width: 100%;
+		padding: 8px;
+	}
+}

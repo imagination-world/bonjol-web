@@ -11,3 +11,10 @@ main {
 	background-image: linear-gradient(to right, var(--bonjol-color-line) 2px, transparent 2px),
 		linear-gradient(to bottom, var(--bonjol-color-line) 2px, transparent 2px);
 }
+
+.supper-title {
+	color: var(--bonjol-color-secondary);
+	text-shadow: 5px 5px var(--bonjol-color-border), 2px 2px var(--bonjol-color-border),
+		2px -2px var(--bonjol-color-border), -2px 2px var(--bonjol-color-border),
+		-2px -2px var(--bonjol-color-border);
+}
