@@ -1,0 +1,59 @@
+@mixin button() {
+	border-radius: var(--bonjol-root-rounded);
+	border: var(--bonjol-root-border) solid var(--bonjol-color-border);
+}
+
+button {
+	position: relative;
+	z-index: 1;
+	padding: 14px 24px;
+
+	$margin: 6px;
+
+	span {
+		position: relative;
+        top: 0;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		@include button();
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: #{$margin};
+		left: 0;
+		right: 0;
+		bottom: -#{$margin};
+		z-index: -2;
+		@include button();
+	}
+
+	&:active {
+		&::before {
+			top: 2px;
+			bottom: -2px;
+		}
+
+		span {
+			top: 2px;
+		}
+	}
+
+	&.bonjol-theme-primary {
+		color: var(--bonjol-color-primary-text);
+
+		&::before {
+			background-color: var(--bonjol-color-primary);
+		}
+
+		&::after {
+			background-color: var(--bonjol-color-primary-variant);
+		}
+	}
+}

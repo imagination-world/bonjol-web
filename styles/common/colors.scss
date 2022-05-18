@@ -1,0 +1,17 @@
+$Colors: (
+	'primary': #e77f67,
+	'primary-variant': #e15f41,
+	'primary-text': #1e2538,
+	'secondary': #6c5ce7,
+	'secondary-variant': #5846de,
+	'secondary-text': #fcfcfd,
+	'line': #f19066,
+	'background': #fff1d2,
+	'border': #303952,
+);
+
+@mixin VariableColors {
+	@each $key, $value in $Colors {
+		--bonjol-color-#{$key}: #{$value};
+	}
+}

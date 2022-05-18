@@ -1,0 +1,14 @@
+$Root: (
+	'transition': '0.2s',
+	'rounded': '3em',
+	'border': '2px',
+	'font-family': 'var(--bonjol-root-font-family-en)',
+	'font-family-fa': '"IRANSansXFaNum"',
+	'font-family-en': '"Patrick Hand"',
+);
+
+@mixin VariableRoot {
+	@each $key, $value in $Root {
+		--bonjol-root-#{$key}: #{$value};
+	}
+}

@@ -1,0 +1,7 @@
+@import './common/colors.scss';
+@import './common/root.scss';
+
+:root {
+	@include VariableColors();
+	@include VariableRoot();
+}
