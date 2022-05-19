@@ -1,8 +1,6 @@
 <template>
-	<main class="w-screen h-screen">
+	<main class="w-screen h-screen overflow-x-hidden">
 		<Header />
-		<div class="container mx-auto">
-			<NuxtPage />
-		</div>
+		<NuxtPage />
 	</main>
 </template>
